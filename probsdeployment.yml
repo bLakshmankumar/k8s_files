@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myspringboot-deployment
+  name: myjavaapp-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: lakshman-deploy
+      app: myjavaapp-deploy
   template:
     metadata:
       labels:
-        app: lakshman-deploy
+        app: myjavaapp-deploy
     spec:
       containers:
-        - name: springboot
+        - name: myjavaapp
           image: *********/kubernetes:*************
 
           resources:
